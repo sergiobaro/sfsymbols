@@ -11,7 +11,7 @@ struct FontStyleView: View {
       Text("Callout").font(.callout)
       Text("Footnote").font(.footnote)
       Text("Caption").font(.caption)
-    }
+    }.listStyle(GroupedListStyle())
   }
 }
 
