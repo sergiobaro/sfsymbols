@@ -17,6 +17,7 @@
 		D9BC50DA2397AFCC00522FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BC50D92397AFCC00522FB2 /* Assets.xcassets */; };
 		D9BC50E02397AFCC00522FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BC50DE2397AFCC00522FB2 /* LaunchScreen.storyboard */; };
 		D9BC50EB2397AFCC00522FB2 /* sfsymbolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC50EA2397AFCC00522FB2 /* sfsymbolsTests.swift */; };
+		D9E29ECA23BFA8F0007D8DAF /* SymbolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29EC923BFA8F0007D8DAF /* SymbolsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D9BC50E62397AFCC00522FB2 /* sfsymbolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sfsymbolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BC50EA2397AFCC00522FB2 /* sfsymbolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sfsymbolsTests.swift; sourceTree = "<group>"; };
 		D9BC50EC2397AFCC00522FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E29EC923BFA8F0007D8DAF /* SymbolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */,
+				D9E29EC923BFA8F0007D8DAF /* SymbolsViewModel.swift */,
 			);
 			path = Symbols;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				D9A4B2CF239BA6F1006C3659 /* FontStyleView.swift in Sources */,
 				D9A4B2D5239BAA3D006C3659 /* Symbols.swift in Sources */,
 				D9BC50D62397AFCB00522FB2 /* SceneDelegate.swift in Sources */,
+				D9E29ECA23BFA8F0007D8DAF /* SymbolsViewModel.swift in Sources */,
 				D9BC50D82397AFCB00522FB2 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
