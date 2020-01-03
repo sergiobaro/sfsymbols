@@ -64,23 +64,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9728C8723BF369700EE3C63 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D9BC50D32397AFCB00522FB2 /* AppDelegate.swift */,
+				D9BC50D52397AFCB00522FB2 /* SceneDelegate.swift */,
+				D9BC50D72397AFCB00522FB2 /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9728C8823BF36A500EE3C63 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		D9728C8923BF36AA00EE3C63 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D9728C8A23BF36B400EE3C63 /* Fonts */,
+				D9728C8823BF36A500EE3C63 /* Symbols */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D9728C8A23BF36B400EE3C63 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4B2CE239BA6F1006C3659 /* FontStyleView.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D9728C8B23BF36DB00EE3C63 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9A4B2D0239BA793006C3659 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D9A4B2D0239BA793006C3659 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D9BC50D72397AFCB00522FB2 /* MainView.swift */,
 				D9341F28239F9023009E9B79 /* SearchBar.swift */,
-				D9A4B2CE239BA6F1006C3659 /* FontStyleView.swift */,
-				D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D9A4B2D3239BAA36006C3659 /* Data */ = {
+		D9A4B2D3239BAA36006C3659 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D9BC50D92397AFCC00522FB2 /* Assets.xcassets */,
+				D9BC50DE2397AFCC00522FB2 /* LaunchScreen.storyboard */,
 				D9A4B2D4239BAA3D006C3659 /* Symbols.swift */,
 			);
-			path = Data;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D9BC50C72397AFCB00522FB2 = {
@@ -104,12 +146,10 @@
 		D9BC50D22397AFCB00522FB2 /* sfsymbols */ = {
 			isa = PBXGroup;
 			children = (
-				D9BC50D32397AFCB00522FB2 /* AppDelegate.swift */,
-				D9BC50D52397AFCB00522FB2 /* SceneDelegate.swift */,
-				D9A4B2D3239BAA36006C3659 /* Data */,
-				D9A4B2D0239BA793006C3659 /* Views */,
-				D9BC50D92397AFCC00522FB2 /* Assets.xcassets */,
-				D9BC50DE2397AFCC00522FB2 /* LaunchScreen.storyboard */,
+				D9728C8723BF369700EE3C63 /* App */,
+				D9728C8923BF36AA00EE3C63 /* Modules */,
+				D9728C8B23BF36DB00EE3C63 /* Common */,
+				D9A4B2D3239BAA36006C3659 /* Resources */,
 				D9BC50E12397AFCC00522FB2 /* Info.plist */,
 			);
 			path = sfsymbols;
