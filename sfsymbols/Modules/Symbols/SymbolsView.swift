@@ -23,7 +23,7 @@ struct SymbolsView: View {
           }
         }
       }
-      .navigationBarTitle("SF Symbols")
+      .navigationBarTitle("SF Symbols (\(viewModel.symbols.count))")
     }
     .tabItem {
       Text("SF Symbols")
