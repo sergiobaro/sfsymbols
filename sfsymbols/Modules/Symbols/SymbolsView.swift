@@ -1,5 +1,4 @@
 import SwiftUI
-import UIKit
 
 struct SymbolsView: View {
   @ObservedObject var viewModel: SymbolsViewModel
@@ -11,7 +10,7 @@ struct SymbolsView: View {
         
         List(viewModel.symbols, id: \.self) { symbolName in
           Button(action: {
-            self.paste(symbolName: symbolName)
+            self.viewModel.selected(symbolName: symbolName)
           }) {
             HStack {
               Image(systemName: symbolName)
@@ -29,10 +28,6 @@ struct SymbolsView: View {
     .tabItem {
       Text("SF Symbols")
     }
-  }
-  
-  private func paste(symbolName: String) {
-    UIPasteboard.general.string = symbolName
   }
 }
 

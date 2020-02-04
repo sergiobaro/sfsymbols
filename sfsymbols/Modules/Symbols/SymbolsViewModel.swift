@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import UIKit
 
 class SymbolsViewModel: ObservableObject {
   
@@ -29,6 +30,10 @@ class SymbolsViewModel: ObservableObject {
         }
       })
       .store(in: &cancellables)
+  }
+  
+  func selected(symbolName: String) {
+    UIPasteboard.general.string = symbolName
   }
   
 }

@@ -5,10 +5,19 @@ struct InstalledFontsView: View {
   
   var body: some View {
     NavigationView {
-      List(viewModel.fonts, id: \.self) { fontName in
-        Text(fontName)
+      List(viewModel.fontNames, id: \.self) { fontName in
+      Button(action: {
+        self.viewModel.selected(fontName: fontName)
+      }) {
+          HStack {
+            Text(fontName)
+              .font(.custom(fontName, size: 20.0))
+            Spacer()
+            Image(systemName: "doc.on.clipboard")
+          }
+        }
       }
-      .navigationBarTitle("Installed Fonts")
+      .navigationBarTitle("Installed Fonts (\(viewModel.fontNames.count))")
     }
     .tabItem {
       Text("Installed Fonts")

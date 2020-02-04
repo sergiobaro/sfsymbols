@@ -3,17 +3,20 @@ import UIKit
 
 class InstalledFontsViewModel: ObservableObject {
   
-  @Published var fonts = [String]()
+  @Published var fontNames = [String]()
   
   init() {
-    var fonts = [String]()
+    var fontNames = [String]()
     UIFont.familyNames.forEach { familyName in
       UIFont.fontNames(forFamilyName: familyName).forEach { fontName in
-        fonts.append("\(familyName), \(fontName)")
+        fontNames.append(fontName)
       }
     }
     
-    self.fonts = fonts
+    self.fontNames = fontNames.sorted()
   }
   
+  func selected(fontName: String) {
+    UIPasteboard.general.string = fontName
+  }
 }
