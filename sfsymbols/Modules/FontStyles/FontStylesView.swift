@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FontStyleView: View {
+struct FontStylesView: View {
   var body: some View {
     NavigationView {
       List {
@@ -24,6 +24,6 @@ struct FontStyleView: View {
 
 struct FontStyleView_Previews: PreviewProvider {
   static var previews: some View {
-    FontStyleView()
+    FontStylesView()
   }
 }

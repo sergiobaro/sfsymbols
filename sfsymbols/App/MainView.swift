@@ -4,7 +4,8 @@ struct MainView: View {
   var body: some View {
     TabView {
       SymbolsView(viewModel: SymbolsViewModel())
-      FontStyleView()
+      FontStylesView()
+      InstalledFontsView(viewModel: InstalledFontsViewModel())
     }
   }
 }

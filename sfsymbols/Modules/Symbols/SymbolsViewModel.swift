@@ -16,7 +16,7 @@ class SymbolsViewModel: ObservableObject {
       .debounce(for: .seconds(0.3), scheduler: DispatchQueue.main)
       .sink(receiveValue: { value in
         // With hundreds of elements List has a performance issue
-        // emptying the array before updating it helps
+        // emptying the array before updating helps
         // https://forums.developer.apple.com/thread/123882#387321
         self.symbols = []
         
