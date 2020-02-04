@@ -19,6 +19,7 @@ struct SymbolsView: View {
               Text(symbolName)
                 .padding()
               Spacer()
+              Image(systemName: "doc.on.clipboard")
             }
           }
         }
