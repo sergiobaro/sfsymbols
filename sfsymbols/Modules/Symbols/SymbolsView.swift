@@ -8,20 +8,14 @@ struct SymbolsView: View {
       VStack {
         SearchBar(searchText: $viewModel.searchText)
         
-        List(viewModel.symbols, id: \.self) { symbolName in
-          Button(action: {
-            self.viewModel.selected(symbolName: symbolName)
-          }) {
-            HStack {
-              Image(systemName: symbolName)
-                .font(.largeTitle)
-              Text(symbolName)
-                .padding()
-              Spacer()
-              Image(systemName: "doc.on.clipboard")
-            }
-          }
-        }
+        SymbolsGridView(
+          symbols: $viewModel.symbols,
+          onSelect: { self.viewModel.selected(symbolName: $0) }
+        )
+//        SymbolsListView(
+//          symbols: $viewModel.symbols,
+//          onSelect: { self.viewModel.selected(symbolName: $0) }
+//        )
       }
       .navigationBarTitle("SF Symbols (\(viewModel.symbols.count))")
     }

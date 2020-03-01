@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D908E8E5240B89E200D55900 /* InstalledFontsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8E4240B89E200D55900 /* InstalledFontsRepository.swift */; };
 		D908E8E8240B8AB200D55900 /* PasteboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8E7240B8AB200D55900 /* PasteboardRepository.swift */; };
+		D908E8EA240B8EEF00D55900 /* SymbolsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8E9240B8EEF00D55900 /* SymbolsListView.swift */; };
+		D908E8EC240B90EB00D55900 /* SymbolsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8EB240B90EB00D55900 /* SymbolsGridView.swift */; };
+		D908E8EE240BC51000D55900 /* SymbolGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8ED240BC51000D55900 /* SymbolGridCellView.swift */; };
 		D9341F29239F9023009E9B79 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9341F28239F9023009E9B79 /* SearchBar.swift */; };
 		D9A4B2CF239BA6F1006C3659 /* FontStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2CE239BA6F1006C3659 /* FontStylesView.swift */; };
 		D9A4B2D2239BA7A2006C3659 /* SymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		D908E8E4240B89E200D55900 /* InstalledFontsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledFontsRepository.swift; sourceTree = "<group>"; };
 		D908E8E7240B8AB200D55900 /* PasteboardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardRepository.swift; sourceTree = "<group>"; };
+		D908E8E9240B8EEF00D55900 /* SymbolsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsListView.swift; sourceTree = "<group>"; };
+		D908E8EB240B90EB00D55900 /* SymbolsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsGridView.swift; sourceTree = "<group>"; };
+		D908E8ED240BC51000D55900 /* SymbolGridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolGridCellView.swift; sourceTree = "<group>"; };
 		D9341F28239F9023009E9B79 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		D9A4B2CE239BA6F1006C3659 /* FontStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStylesView.swift; sourceTree = "<group>"; };
 		D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */,
+				D908E8E9240B8EEF00D55900 /* SymbolsListView.swift */,
+				D908E8EB240B90EB00D55900 /* SymbolsGridView.swift */,
+				D908E8ED240BC51000D55900 /* SymbolGridCellView.swift */,
 				D9E29EC923BFA8F0007D8DAF /* SymbolsViewModel.swift */,
 			);
 			path = Symbols;
@@ -295,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D908E8EC240B90EB00D55900 /* SymbolsGridView.swift in Sources */,
+				D908E8EE240BC51000D55900 /* SymbolGridCellView.swift in Sources */,
 				D9341F29239F9023009E9B79 /* SearchBar.swift in Sources */,
 				D9BC50D42397AFCB00522FB2 /* AppDelegate.swift in Sources */,
 				D9A4B2D2239BA7A2006C3659 /* SymbolsView.swift in Sources */,
@@ -306,6 +317,7 @@
 				D9BC50D62397AFCB00522FB2 /* SceneDelegate.swift in Sources */,
 				D9E29ECA23BFA8F0007D8DAF /* SymbolsViewModel.swift in Sources */,
 				D908E8E8240B8AB200D55900 /* PasteboardRepository.swift in Sources */,
+				D908E8EA240B8EEF00D55900 /* SymbolsListView.swift in Sources */,
 				D9BC50D82397AFCB00522FB2 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

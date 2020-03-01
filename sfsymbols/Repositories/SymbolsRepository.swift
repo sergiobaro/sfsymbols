@@ -6,7 +6,7 @@ struct SymbolsRepository {
   }
 }
 
-private struct Symbols {
+struct Symbols {
   static let symbols = [
     "0.circle",
     "00.circle",
