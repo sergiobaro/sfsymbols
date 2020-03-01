@@ -1,17 +1,17 @@
 import Foundation
 import Combine
 
-class SymbolsViewModel: ObservableObject {
+class InstalledFontsViewModel: ObservableObject {
   
-  @Published var symbols = [String]()
+  @Published var fontNames = [String]()
   @Published var searchText = ""
   
-  private let symbolsRepository = SymbolsRepository()
+  private let installedFonts = InstalledFontsRepository()
   private let pasteboard = PasteboardRepository()
   private var cancellables = Set<AnyCancellable>()
   
   init() {
-    self.symbols = self.symbolsRepository.allSymbols()
+    self.fontNames = self.installedFonts.allFontNames()
     
     $searchText
       .dropFirst()
@@ -20,20 +20,22 @@ class SymbolsViewModel: ObservableObject {
         // With hundreds of elements List has a performance issue
         // emptying the array before updating helps
         // https://forums.developer.apple.com/thread/123882#387321
-        self.symbols = []
+        self.fontNames = []
         
         DispatchQueue.main.async {
           if value.isEmpty {
-            self.symbols = self.symbolsRepository.allSymbols()
+            self.fontNames = self.installedFonts.allFontNames()
           } else {
-            self.symbols = self.symbolsRepository.allSymbols().filter { $0.contains(value) }
+            self.fontNames = self.installedFonts.allFontNames().filter {
+              $0.lowercased().contains(value)
+            }
           }
         }
       })
       .store(in: &cancellables)
   }
   
-  func selected(symbolName: String) {
-    self.pasteboard.paste(string: symbolName)
+  func selected(fontName: String) {
+    self.pasteboard.paste(string: fontName)
   }
 }

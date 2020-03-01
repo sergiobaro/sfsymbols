@@ -14,10 +14,10 @@ struct FontStylesView: View {
         Text("Caption").font(.caption)
       }
       .listStyle(GroupedListStyle())
-      .navigationBarTitle("Font Style")
+      .navigationBarTitle("Font Styles")
     }
     .tabItem {
-      Text("Font Style")
+      Text("Font Styles")
     }
   }
 }

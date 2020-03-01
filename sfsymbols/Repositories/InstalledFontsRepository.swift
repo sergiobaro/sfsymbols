@@ -1,9 +1,8 @@
-import Foundation
 import UIKit
 
-class InstalledFontsViewModel: ObservableObject {
+struct InstalledFontsRepository {
   
-  @Published var fontNames = [String]()
+  private let fontNames: [String]
   
   init() {
     var fontNames = [String]()
@@ -12,11 +11,10 @@ class InstalledFontsViewModel: ObservableObject {
         fontNames.append(fontName)
       }
     }
-    
     self.fontNames = fontNames.sorted()
   }
   
-  func selected(fontName: String) {
-    UIPasteboard.general.string = fontName
+  func allFontNames() -> [String] {
+    return self.fontNames
   }
 }

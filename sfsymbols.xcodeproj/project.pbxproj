@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D908E8E5240B89E200D55900 /* InstalledFontsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8E4240B89E200D55900 /* InstalledFontsRepository.swift */; };
+		D908E8E8240B8AB200D55900 /* PasteboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D908E8E7240B8AB200D55900 /* PasteboardRepository.swift */; };
 		D9341F29239F9023009E9B79 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9341F28239F9023009E9B79 /* SearchBar.swift */; };
 		D9A4B2CF239BA6F1006C3659 /* FontStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2CE239BA6F1006C3659 /* FontStylesView.swift */; };
 		D9A4B2D2239BA7A2006C3659 /* SymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */; };
-		D9A4B2D5239BAA3D006C3659 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2D4239BAA3D006C3659 /* Symbols.swift */; };
+		D9A4B2D5239BAA3D006C3659 /* SymbolsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A4B2D4239BAA3D006C3659 /* SymbolsRepository.swift */; };
 		D9A56FEF23E9E9BF005F0E41 /* InstalledFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A56FEE23E9E9BF005F0E41 /* InstalledFontsView.swift */; };
 		D9A56FF123E9EACE005F0E41 /* InstalledFontsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A56FF023E9EACE005F0E41 /* InstalledFontsViewModel.swift */; };
 		D9BC50D42397AFCB00522FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC50D32397AFCB00522FB2 /* AppDelegate.swift */; };
@@ -33,10 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D908E8E4240B89E200D55900 /* InstalledFontsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledFontsRepository.swift; sourceTree = "<group>"; };
+		D908E8E7240B8AB200D55900 /* PasteboardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardRepository.swift; sourceTree = "<group>"; };
 		D9341F28239F9023009E9B79 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		D9A4B2CE239BA6F1006C3659 /* FontStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStylesView.swift; sourceTree = "<group>"; };
 		D9A4B2D1239BA7A2006C3659 /* SymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsView.swift; sourceTree = "<group>"; };
-		D9A4B2D4239BAA3D006C3659 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		D9A4B2D4239BAA3D006C3659 /* SymbolsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsRepository.swift; sourceTree = "<group>"; };
 		D9A56FEE23E9E9BF005F0E41 /* InstalledFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledFontsView.swift; sourceTree = "<group>"; };
 		D9A56FF023E9EACE005F0E41 /* InstalledFontsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledFontsViewModel.swift; sourceTree = "<group>"; };
 		D9BC50D02397AFCB00522FB2 /* sfsymbols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sfsymbols.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D908E8E6240B8AA400D55900 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D908E8E7240B8AB200D55900 /* PasteboardRepository.swift */,
+				D9A4B2D4239BAA3D006C3659 /* SymbolsRepository.swift */,
+				D908E8E4240B89E200D55900 /* InstalledFontsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		D9728C8723BF369700EE3C63 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +106,7 @@
 		D9728C8923BF36AA00EE3C63 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D9A56FED23E9E98A005F0E41 /* Fonts */,
+				D9A56FED23E9E98A005F0E41 /* InstalledFonts */,
 				D9728C8A23BF36B400EE3C63 /* FontStyles */,
 				D9728C8823BF36A500EE3C63 /* Symbols */,
 			);
@@ -128,18 +142,17 @@
 			children = (
 				D9BC50D92397AFCC00522FB2 /* Assets.xcassets */,
 				D9BC50DE2397AFCC00522FB2 /* LaunchScreen.storyboard */,
-				D9A4B2D4239BAA3D006C3659 /* Symbols.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D9A56FED23E9E98A005F0E41 /* Fonts */ = {
+		D9A56FED23E9E98A005F0E41 /* InstalledFonts */ = {
 			isa = PBXGroup;
 			children = (
 				D9A56FEE23E9E9BF005F0E41 /* InstalledFontsView.swift */,
 				D9A56FF023E9EACE005F0E41 /* InstalledFontsViewModel.swift */,
 			);
-			path = Fonts;
+			path = InstalledFonts;
 			sourceTree = "<group>";
 		};
 		D9BC50C72397AFCB00522FB2 = {
@@ -165,6 +178,7 @@
 			children = (
 				D9728C8723BF369700EE3C63 /* App */,
 				D9728C8923BF36AA00EE3C63 /* Modules */,
+				D908E8E6240B8AA400D55900 /* Repositories */,
 				D9728C8B23BF36DB00EE3C63 /* Common */,
 				D9A4B2D3239BAA36006C3659 /* Resources */,
 				D9BC50E12397AFCC00522FB2 /* Info.plist */,
@@ -287,9 +301,11 @@
 				D9A4B2CF239BA6F1006C3659 /* FontStylesView.swift in Sources */,
 				D9A56FF123E9EACE005F0E41 /* InstalledFontsViewModel.swift in Sources */,
 				D9A56FEF23E9E9BF005F0E41 /* InstalledFontsView.swift in Sources */,
-				D9A4B2D5239BAA3D006C3659 /* Symbols.swift in Sources */,
+				D9A4B2D5239BAA3D006C3659 /* SymbolsRepository.swift in Sources */,
+				D908E8E5240B89E200D55900 /* InstalledFontsRepository.swift in Sources */,
 				D9BC50D62397AFCB00522FB2 /* SceneDelegate.swift in Sources */,
 				D9E29ECA23BFA8F0007D8DAF /* SymbolsViewModel.swift in Sources */,
+				D908E8E8240B8AB200D55900 /* PasteboardRepository.swift in Sources */,
 				D9BC50D82397AFCB00522FB2 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
